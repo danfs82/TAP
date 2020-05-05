@@ -94,13 +94,13 @@ public class RegistroServidor extends Servidor {
 	 * @return Um inteiro com o getTamanhoRegistro do registro do servidor.
 	 */
 	public int getTamanhoRegistro() {
-		// 4 matricula + 30 nome + 15 setor + 8 salario + 4 classe
+		// 4 matricula + 34 nome + 31 setor + 8 salario + 4 classe
 		// matricula int = 4 bytes
 		// nome String = 34 caracteres = 1 caracter ocupada 2 bytes = 68 bytes
 		// setor String = 31 caracteres = 1 caracter ocupada 2 bytes = 62 bytes
 		// salario double = 8 bytes
 		// classe int = 4 bytes
-		// Total 150 bytes
+		// Total 146 bytes
 		return (4 + (2 * 34) + (2 * 31) + 8 + 4);
 	}
 }
